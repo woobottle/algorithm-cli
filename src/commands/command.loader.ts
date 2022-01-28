@@ -5,5 +5,4 @@ export class CommandLoader {
   public static load(program: Command): void {
     new GenearteCommmand().load(program);
   }
-
 }

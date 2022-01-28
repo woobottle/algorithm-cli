@@ -4,8 +4,7 @@ import { CommandLoader } from './commands';
 
 const bootstrap = () => {
   console.log(BANNER)
-
-  program.version(require('../package.json').version, '-v, --version');
+  program.version('0.0.1', '-v, --version');
   CommandLoader.load(program);
   program.parse(process.argv);
 
