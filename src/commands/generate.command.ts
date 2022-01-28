@@ -34,7 +34,7 @@ export class GenearteCommmand implements AbstractCommand {
         const { language, identifier } = answers;
         const template = TemplateGenerator.generate(answers);
         const extension = getExtension(language);
-        if (typeof template === "string") fs.writeFile(`../${identifier}.${extension}`, template, (err: any) => {
+        if (typeof template === "string") fs.writeFile(`./${identifier}.${extension}`, template, (err: any) => {
           if (err) {
             return console.log("error happened")
           }
