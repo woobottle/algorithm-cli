@@ -10,8 +10,6 @@ npm 명령어를 통해 설치할 수 있습니다.
 > npm install -g algorithm-cli
 ```
 
---- 
-
 
 <h2>사용법</h2>
 
@@ -21,13 +19,9 @@ npm 명령어를 통해 설치할 수 있습니다.
 
 ![image](https://user-images.githubusercontent.com/50283326/152675887-0c4649bc-f9d6-41c4-bf5b-142f32a004e0.png)
 
---- 
-
 <h2>이건 뭐죠??</h2>     
 
 Algorithm PS(Problem Solving)를 위한 solve 파일 생성기 입니다.      
-
----
 
 <h2>왜 만들었죠???</h2>
 
@@ -39,8 +33,6 @@ algorithm 연습을 제공하는 여러 사이트들이 있습니다. (ex. 백�
 cli 환경에서 주요 로직을 포함한 solve 파일을 원하는 이름과 함께 생성할 수 있게 하였습니다.   
 **(nest-cli의 구조를 참고하여 만들었습니다.)**
 
----
-
 <h2>진행 과정</h2>
 
 1. select site(current => programmers or baekjoon)
@@ -48,25 +40,17 @@ cli 환경에서 주요 로직을 포함한 solve 파일을 원하는 이름과 
 3. input problem number
 4. create file name with [number].py or [number].js based on your language
 
---- 
-
 <h2>현재 적용되는 언어</h2>
 
 1. python
 2. javascript
-
---- 
 
 <h2>현재 적용되는 사이트</h2>
 
 1. https://www.acmicpc.net/
 2. https://programmers.co.kr/learn/challenges
 
----
-
 <h2>템플릿</h2>
 
 1. [백준 템플릿 - python, javascript](https://github.com/woobottle/algorithm-cli/blob/master/src/templates/baekjoon.template.ts)
 2. [프로그래머스 템플릿 - python, javascript](https://github.com/woobottle/algorithm-cli/blob/master/src/templates/programmers.template.ts)
-
----
