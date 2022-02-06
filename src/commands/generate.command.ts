@@ -9,7 +9,7 @@ import fs from 'fs';
 import { InfoForGenerateFile } from '../interface';
 import { getExtension } from '../utils';
 
-export class GenearteCommmand implements AbstractCommand {
+export class GenearateCommmand implements AbstractCommand {
   public load(program: Command): void {
     program
     .command('generate')
