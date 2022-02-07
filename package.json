@@ -1,6 +1,6 @@
 {
   "name": "algorithm-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "algrorithm solve file create program",
   "engines": { "node": ">= 10.13.0" },
   "publishConfig": {
