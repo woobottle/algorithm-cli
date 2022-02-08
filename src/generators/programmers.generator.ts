@@ -1,4 +1,4 @@
-import { programmersJavascriptTemplate, programmersPythonTemplate } from '../templates/index';
+import { programmersJavascriptTemplate, programmersPythonTemplate, programmersJavaTemplate } from '../templates/index';
 import { IndividualGeneratorInputProps } from './../interface/index';
 import { AbstractGenerator } from "./abstract.generator";
 
@@ -9,6 +9,8 @@ export class ProgrammersGenerator extends AbstractGenerator {
         return programmersPythonTemplate()
       case "javascript" :
         return programmersJavascriptTemplate()
+      case "java" :
+        return programmersJavaTemplate()
       default :
         return new Error('input wrong language')
     }

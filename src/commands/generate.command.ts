@@ -17,7 +17,7 @@ export class GenearateCommmand implements AbstractCommand {
     .action(() => {
       const questions = [
         generateSelect("site", chalk.default.magenta("which site will you solve"), ["baekjoon", "programmers"]),
-        generateSelect("language", chalk.default.magenta("please select programming language"), ["python", "javascript"]),
+        generateSelect("language", chalk.default.magenta("please select programming language"), ["python", "javascript", "java"]),
         generateInput("identifier", chalk.default.magenta("please input problem number or problem title"))
       ];
 
