@@ -16,7 +16,7 @@ export class GenearateCommmand implements AbstractCommand {
     .alias('g')
     .action(() => {
       const questions = [
-        generateSelect("site", chalk.default.magenta("which site will you solve"), ["baekjoon", "programmers"]),
+        generateSelect("site", chalk.default.magenta("which site will you solve"), ["baekjoon", "programmers", "swExpertAcademy"]),
         generateSelect("language", chalk.default.magenta("please select programming language"), ["python", "javascript", "java"]),
         generateInput("identifier", chalk.default.magenta("please input problem number or problem title"))
       ];
@@ -34,12 +34,18 @@ export class GenearateCommmand implements AbstractCommand {
         const { language, identifier } = answers;
         const template = TemplateGenerator.generate(answers);
         const extension = getExtension(language);
-        if (typeof template === "string") fs.writeFile(`./${identifier}.${extension}`, template, (err: any) => {
-          if (err) {
-            return console.log("error happened")
-          }
-          return spinner.stop();
-        });
+        const fileName = language === 'java' ? "Main" : identifier;
+        
+        if (typeof template === "string") {
+          fs.writeFile(`./${fileName}.${extension}`, 
+          template, 
+          (err: any) => {
+            if (err) {
+              return console.log("error happened")
+            }
+            return spinner.stop();
+          });
+        }
       });
     })
   }

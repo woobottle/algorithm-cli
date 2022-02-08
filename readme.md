@@ -44,16 +44,19 @@ cli 환경에서 주요 로직을 포함한 solve 파일을 원하는 이름과 
 
 1. python
 2. javascript
+3. java
 
 <h2>현재 적용되는 사이트</h2>
 
 1. https://www.acmicpc.net/
 2. https://programmers.co.kr/learn/challenges
+3. https://swexpertacademy.com/main/main.do
 
 <h2>템플릿</h2>
 
 1. [백준 템플릿 - python, javascript, java](https://github.com/woobottle/algorithm-cli/blob/master/src/templates/baekjoon.template.ts)
 2. [프로그래머스 템플릿 - python, javascript, java](https://github.com/woobottle/algorithm-cli/blob/master/src/templates/programmers.template.ts)
+3. [SW Expert Academy - python, Java](https://github.com/woobottle/algorithm-cli/blob/master/src/templates/swExpertAcademy.template.ts)
 
 
 -----
