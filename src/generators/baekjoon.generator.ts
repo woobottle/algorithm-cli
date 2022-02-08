@@ -6,9 +6,9 @@ export class BaekjoonGenerator extends AbstractGenerator {
   public generate({language, identifier}: IndividualGeneratorInputProps): string | Error {
     switch(language) {
       case "python" :
-        return baekjoonPythonTemplate(identifier)
+        return baekjoonPythonTemplate(identifier);
       case "javascript" :
-        return baekjoonJavascriptTemplate()
+        return baekjoonJavascriptTemplate();
       case "java" :
         return baekjoonJavaTemplate();
       default :
