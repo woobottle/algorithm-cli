@@ -52,8 +52,8 @@ cli 환경에서 주요 로직을 포함한 solve 파일을 원하는 이름과 
 
 <h2>템플릿</h2>
 
-1. [백준 템플릿 - python, javascript](https://github.com/woobottle/algorithm-cli/blob/master/src/templates/baekjoon.template.ts)
-2. [프로그래머스 템플릿 - python, javascript](https://github.com/woobottle/algorithm-cli/blob/master/src/templates/programmers.template.ts)
+1. [백준 템플릿 - python, javascript, java](https://github.com/woobottle/algorithm-cli/blob/master/src/templates/baekjoon.template.ts)
+2. [프로그래머스 템플릿 - python, javascript, java](https://github.com/woobottle/algorithm-cli/blob/master/src/templates/programmers.template.ts)
 
 
 -----
